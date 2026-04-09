@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Jogo do Número Secreto</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-<h1>Jogo do Número Secreto</h1>
+    <div class="container">
+
+<h1>🎯 Adivinhe o Número</h1>
 
 <h3>Escolha a dificuldade:</h3>
 
@@ -19,11 +22,11 @@
 
 <br><br>
 
-<button onclick="iniciarJogo()">
+<button class="btn-iniciar" onclick="iniciarJogo()">
 Iniciar Jogo
-</button>
+</button> 
 
-<button onclick="reiniciarJogo()">
+<button class="btn-reiniciar" onclick="reiniciarJogo()">
 Reiniciar Jogo
 </button>
 
@@ -31,9 +34,9 @@ Reiniciar Jogo
 
 <h3>Digite seu chute:</h3>
 
-<input type="number" id="chute">
+<input type="number" id="chute"  placeholder="Digite um número">
 
-<button onclick="verificarChute()">
+<button class="btn-chutar" onclick="verificarChute()">
 Chutar
 </button>
 
@@ -48,6 +51,8 @@ Tentativas: 8 / 8
 <ul id="historico"></ul>
 
 <script src="./js/app.js"></script>
+
+</div>
 
 </body>
 </html>
