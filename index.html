@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo do Número Secreto</title>
+</head>
+<body>
+
+<h1>Jogo do Número Secreto</h1>
+
+<h3>Escolha a dificuldade:</h3>
+
+<select id="dificuldade">
+    <option value="50">Fácil (1 a 50)</option>
+    <option value="100">Médio (1 a 100)</option>
+    <option value="200">Difícil (1 a 200)</option>
+    <option value="500">Impossível (1 a 500)</option>
+</select>
+
+<br><br>
+
+<button onclick="iniciarJogo()">
+Iniciar Jogo
+</button>
+
+<button onclick="reiniciarJogo()">
+Reiniciar Jogo
+</button>
+
+<hr>
+
+<h3>Digite seu chute:</h3>
+
+<input type="number" id="chute">
+
+<button onclick="verificarChute()">
+Chutar
+</button>
+
+<p id="tentativas">
+Tentativas: 8 / 8
+</p>
+
+<p id="feedback"></p>
+
+<h3>Histórico de tentativas:</h3>
+
+<ul id="historico"></ul>
+
+<script src="./js/app.js"></script>
+
+</body>
+</html>
